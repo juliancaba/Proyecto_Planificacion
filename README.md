@@ -19,7 +19,7 @@ sudo service start jenkins
 
 7. Le damos a "Save" y el proceso de creación de nuestra Pipeline definida en el Jenkinsfile del repositorio debería comenzar, con su correcta creación y ejecución de la imagen docker.
 
-8. Para que el proceso se vuelva a lanzar cada vez que se haga un commit al repositorio debemos hacer visible nuestro jenkins local a GitHub, para ello usaremos ngrok (después de seguir el proceso de instalación recomendado por la página oficial): ./ngrok http 8080, este comando nos dará una ip pública del tipo https://XXXXXX.ngrok.io, iremos a nuestro repositorio GitHub y añadiremos la url https://XXXXX.ngrok.io/github-webhook a nuestros webhooks.
+8. Para que el proceso se vuelva a lanzar cada vez que se haga un commit al repositorio debemos hacer visible nuestro jenkins local a GitHub, para ello usaremos ngrok (después de seguir el proceso de instalación recomendado por la página oficial): ./ngrok http 8080, este comando nos dará una ip pública del tipo https://XXXXXX.ngrok.io, iremos a nuestro repositorio GitHub y añadiremos la url https://XXXXX.ngrok.io/github-webhook/ a nuestros webhooks.
 
 9. Cuando realicemos algún cambio en nuestro repositorio, se repetirá el proceso de ejecución de la pipeline y compilación de nuestro docker con el conjunto de tests.
 
