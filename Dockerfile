@@ -6,6 +6,6 @@ RUN python3 -m pip install pytest
 RUN mkdir /src
 COPY test_main.py /src/test_main.py
 
-WORKDIR /src
+#WORKDIR /src
 
-CMD ["pytest"]
+#CMD ["pytest"]
